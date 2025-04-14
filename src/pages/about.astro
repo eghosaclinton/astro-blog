@@ -1,5 +1,8 @@
 ---
+import Navigation from "../components/Navigation.astro";
+import Footer from '../components/Footer.astro';
 import "../styles/globals.css"
+
 type Identity = {
   firstName: string;
   country: string;
@@ -9,13 +12,13 @@ type Identity = {
 const pageTitle = "About Me";
 
 const identity: Identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+  firstName: "Aisosa",
+  country: "Nigeria",
+  occupation: "Software & bot developer",
+  hobbies: ["sleeping", "photography", "watching football"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Typescript", "bot dev", "Astro", "Writing Docs"];
 
 const happy = true;
 const finished = false;
@@ -47,9 +50,7 @@ const textCase = "uppercase"
     </style>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
 
     <h1>{pageTitle}</h1>
     <h2>... my new Astro site</h2>
@@ -93,5 +94,7 @@ const textCase = "uppercase"
     <ul>
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
+
+    <Footer />
   </body>
 </html>
