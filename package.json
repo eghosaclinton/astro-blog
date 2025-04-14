@@ -9,6 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.6.1"
+    "astro": "^5.6.1",
+    "react": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.1"
   }
 }
