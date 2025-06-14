@@ -5,7 +5,7 @@ export async function GET (context){
         title: "a1s0sa astro learning | blog",
         description: "my journey learning Astro",
         site: context.site,
-        items: await pagesGlobToRssItems(import.meta.glob("./**/*.md")),
+        items: await pagesGlobToRssItems(import.meta.glob("../**/*.md")),
         customData: `<language>en-us</language>`
     })
 }
